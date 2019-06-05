@@ -1,5 +1,5 @@
-#static-landing-page
+# static-landing-page
 
-#Demo Web
+# Demo Web
 
 ![Farmers Market Finder Demo](img/demo.gif)
