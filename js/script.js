@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    $(window).scroll(function() {
+$(document).ready(() => {
+    $(window).scroll(() => {
         let scroll = $(this).scrollTop();
         // discover show
         if (scroll > 200) {
@@ -36,8 +36,8 @@ $(document).ready(function() {
         }
         // image show
         if (scroll > $(".gallery").offset().top - 400) {
-            $(".gallery .thumb").each(function(i) {
-                setTimeout(function() {
+            $(".gallery .thumb").each(i => {
+                setTimeout(() => {
                     $(".gallery .thumb")
                         .eq(i)
                         .addClass("show");
@@ -52,7 +52,7 @@ $(document).ready(function() {
         $(".progress-bar").css({ width: percentageround + "%" });
     });
     // jumbotron info show
-    $(window).on("load", function() {
+    $(window).on("load", () => {
         $(".jumbotron-info").addClass("show");
     });
 });
